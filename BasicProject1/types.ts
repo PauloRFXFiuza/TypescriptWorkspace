@@ -30,6 +30,25 @@ Pode-se usar o sufixo n para criar literais de bigint*/
 
 let BigNumber: bigint = 123456789012345678901234567890n;
 
+/* Example of symbol
+The symbol type is used to create unique identifiers that can be used as keys in objects.
+Exemplo de symbol
+O tipo symbol é usado para criar identificadores únicos que podem ser utilizados como chaves em objetos. */
+
+// Explicit declaration
+let uniqueKey: symbol = Symbol("description");
+
+// Using symbols as keys in objects
+let myObject = {
+  [uniqueKey]: "value associated with the symbol"
+};
+
+console.log(myObject[uniqueKey]); // "value associated with the symbol"
+
+// Each Symbol is unique
+let anotherKey: symbol = Symbol("description");
+console.log(uniqueKey === anotherKey); // false
+
 
 
 /* When creating a variable, there are two main ways for TypeScript to assign a type:
