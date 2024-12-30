@@ -52,7 +52,15 @@ let comparation: boolean = uniqueKey === anotherKey; // false result- resultado 
 /* When creating a variable, there are two main ways for TypeScript to assign a type:
 Ao criar uma variável, há duas maneiras principais de o TypeScript atribuir um tipo:
 - Explicit (Explícito) and Implicit (Implícito)
+
 /* EXPLICIT TYPE – When you assign the data type in the declaration. 
- TIPO EXPLÍCITO – Quando se atribui o tipo de dado na declaração.*/
+TIPO EXPLÍCITO – Quando se atribui o tipo de dado na declaração.*/
 
 let otherName: string = "Mikaeli";
+//otherName = 92; //TS error: Type 'number' is not assignable to type 'string'.ts(2322)
+
+/* IMPLICIT TYPE - When TypeScript will "guess" (infer) the type based on the assigned value. 
+TIPO IMPLÍCITO - Quando o TypeScript irá "adivinhar" (inferir) o tipo, com base no valor atribuído.*/
+
+let country = "Brasil";
+//country= 1232; //TS error: Type 'number' is not assignable to type 'string'.ts(2322)
