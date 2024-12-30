@@ -13,4 +13,19 @@ myVariable = 42;
 (qualquer) - é um tipo que desabilita a verificação de tipos e permite efetivamente que todos os tipos sejam usados. */
 
 let test: any = 100;
-test = "text";
+test = "text"; test = false; test = null; test = undefined; test = 1231231232132123132132132122221121n;
+
+/*WARNING: any can be a useful way to avoid errors, as it
+disables type checking, but TypeScript will not be able
+to provide type safety, and tools that depend on type data,
+like autocomplete, will not work.
+Remember, it should be avoided at "any" cost...
+
+ALERTA: any pode ser uma maneira útil de evitar erros, uma vez que
+desabilita a verificação de tipos, mas o TypeScript não será capaz
+de fornecer segurança de tipo e ferramentas que dependem em dados de tipo,
+como preenchimento automático, não funcionarão.
+Lembre-se, deve ser evitado a "qualquer" custo...
+*/
+
+
