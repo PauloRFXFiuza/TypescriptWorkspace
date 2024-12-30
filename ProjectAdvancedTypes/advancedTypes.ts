@@ -72,4 +72,27 @@ TypeScript pode inferir o tipo de uma matriz se ela tiver valores.*/
 const numbers = [1, 2, 3]; // infers type number[]
 
 numbers.push(4); // no error
-//numbers.push("2"); // Error
+//numbers.push("2"); // Error TS- Argument of type 'string' is not assignable to parameter of type 'number'.ts(2345)
+
+let y: number = numbers[0]; //no error- value= 1
+
+/* tuples - A tuple is an array typed with a fixed length and 
+predefined types for each index. Tuples are great because they allow 
+each element in the array to have a known value type. 
+
+tuplas - Uma tupla é um array (matriz) tipada com um comprimento e 
+tipos predefinidos para cada índice. As tuplas são ótimas porque permitem 
+que cada elemento na matriz seja um tipo conhecido de valor.*/
+
+let nossaTupla: [number, boolean, string];
+nossaTupla = [5, false, 'Leave a Like!'];
+
+//EXAMPLE WITH ERROR- Exemplo com erro
+//nossaTupla = [false, 'Subscribe too!', 5];
+
+/* A good practice is to make your tuple always readonly. Why?
+Because tuples only have strongly defined types for the initial values.
+
+Uma boa prática é fazer sua tupla sempre readonly. Por quê?
+Por que as tuplas só têm tipos fortemente definidos para os valores 
+iniciais.*/
