@@ -52,8 +52,13 @@ never é raramente usado, seu uso primário é em Genéricos avançados.*/
 array (matriz) - TypeScript tem uma sintaxe específica para matrizes.*/
 const names = [];
 names.push("Dimitri"); // no error
-// names.push(3); // Error
+//names.push(3); // Error TS- Argument of type 'number' is not assignable to parameter of type 'string'.ts(2345)
 /* The 'readonly' keyword prevents arrays from being changed.
 A palavra-chave 'readonly' (somente leitura) impede que matrizes sejam alteradas.*/
 const names2 = ["Paulo", "Mikaeli"];
 //names2.push("Jason"); //Error TS- Property 'push' does not exist on type 'readonly string[]'.ts(2339)
+/* Type inference- TS can infer the type of an array if it has values.
+TypeScript pode inferir o tipo de uma matriz se ela tiver valores.*/
+const numbers = [1, 2, 3]; // infers type number[]
+numbers.push(4); // no error
+//numbers.push("2"); // Error
