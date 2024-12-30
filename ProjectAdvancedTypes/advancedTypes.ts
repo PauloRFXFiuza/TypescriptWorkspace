@@ -100,3 +100,7 @@ Because tuples only have strongly defined types for the initial values.
 Uma boa prática é fazer sua tupla sempre readonly. Por quê?
 Por que as tuplas só têm tipos fortemente definidos para os valores 
 iniciais.*/
+
+const myTuple: readonly [number, boolean, string, number] = [1, true, 'nice', 2];
+
+//myTuple.push(3); //Error TS- Property 'push' does not exist on type 'readonly [number, boolean, string, number]'.ts(2339)
