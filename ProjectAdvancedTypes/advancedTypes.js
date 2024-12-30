@@ -15,7 +15,9 @@ test = false;
 test = null;
 test = undefined;
 test = 1231231232132123132132132122221121n;
-/*WARNING: any can be a useful way to avoid errors, as it
+test = "text";
+let testLength = test.length; //value= 4
+/* WARNING: any can be a useful way to avoid errors, as it
 disables type checking, but TypeScript will not be able
 to provide type safety, and tools that depend on type data,
 like autocomplete, will not work.
