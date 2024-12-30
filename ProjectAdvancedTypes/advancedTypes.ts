@@ -137,3 +137,10 @@ const car3: { model: string, engine?: number } = {
 };
   
 car3.engine = 1.0;
+
+/* Index signatures - Index signatures can be used for objects without a defined list of properties. 
+Assinaturas de índice - As assinaturas de índice podem ser usadas para objetos sem uma lista definida de propriedades.*/
+
+const nameAndAge: { [index: string]: number } = {};
+nameAndAge["Paulo"] = 34;
+//nameAndAge["Lucas"] = "Fifty"; // TS Error- Type 'string' is not assignable to type 'number'.ts(2322)
