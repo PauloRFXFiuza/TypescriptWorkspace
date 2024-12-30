@@ -40,3 +40,16 @@ valor = "Text now";
 //console.log(valor.length); // Error TS: 'valor' is of type 'unknown'.ts(18046)
 let conversion = valor;
 console.log(conversion.length); //value= 8
+/* never - throws an error whenever it is defined.
+never is rarely used; its primary use is in advanced Generics.
+
+never (nunca)- lança um erro sempre que ele é definido.
+never é raramente usado, seu uso primário é em Genéricos avançados.*/
+//let b: never = true;
+/* array - TypeScript has a specific syntax for arrays.
+array - TypeScript tem uma sintaxe específica para matrizes.*/
+const names = [];
+names.push("Dimitri"); // no error
+// names.push(3); // Error
+/* The 'readonly' keyword prevents arrays from being changed.
+A palavra-chave 'readonly' (somente leitura) impede que matrizes sejam alteradas.*/ 
