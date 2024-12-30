@@ -71,9 +71,11 @@ tuplas - Uma tupla é um array (matriz) tipada com um comprimento e
 tipos predefinidos para cada índice. As tuplas são ótimas porque permitem
 que cada elemento na matriz seja um tipo conhecido de valor.*/
 let nossaTupla;
-nossaTupla = [5, false, 'Leave a Like!'];
+nossaTupla = [5, false, 'arroz'];
+nossaTupla.push('macarrao'); //result: [5, false, 'arroz', 'macarrao']
 //EXAMPLE WITH ERROR- Exemplo com erro
-//nossaTupla = [false, 'Subscribe too!', 5];
+//nossaTupla = [false, 'feijão', 5]; //Error TS- Type 'boolean' is not assignable to type 'number'.ts(2322),
+//Type 'string' is not assignable to type 'boolean'.ts(2322), Type 'number' is not assignable to type 'string'.ts(2322)
 /* A good practice is to make your tuple always readonly. Why?
 Because tuples only have strongly defined types for the initial values.
 
