@@ -98,3 +98,14 @@ const car2 = {
 };
 car2.brand = "Ford"; // no error - it understood that 'brand' is a string.
 //car2.brand = 2; // Error TS- Type 'number' is not assignable to type 'string'.ts(2322)
+/* In TS, an object can have optional properties.
+Optional properties are properties that don't need to be defined in the object definition.
+They can be used later or not, they are optional.
+
+No TypeScript um objeto pode ter Propriedades opcionais.
+Propriedades opcionais são propriedades que não precisam ser definidas na definição do objeto.
+Elas podem ser usadas depois ou não, são opcionais.*/
+const car3 = {
+    model: "Uno"
+};
+car3.engine = 1.0;
