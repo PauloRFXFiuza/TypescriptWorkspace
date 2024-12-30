@@ -29,3 +29,14 @@ de fornecer segurança de tipo e ferramentas que dependem em dados de tipo,
 como preenchimento automático, não funcionarão.
 Lembre-se, deve ser evitado a "qualquer" custo...
 */
+/* unknown - is a safer alternative to any.
+This type requires explicit checks or conversions to
+ensure type safety during operations.
+unknown (desconhecido) - é uma alternativa semelhante ao any, só que mais segura.
+Esse tipo exige verificações ou conversões explícitas para
+garantir a segurança de tipo durante as operações.*/
+let valor = 100;
+valor = "Text now";
+//console.log(valor.length); // Error TS: 'valor' is of type 'unknown'.ts(18046)
+let conversion = valor;
+console.log(conversion.length); //value= 8
