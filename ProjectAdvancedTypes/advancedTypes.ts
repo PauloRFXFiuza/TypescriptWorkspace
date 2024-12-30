@@ -49,10 +49,13 @@ never is rarely used; its primary use is in advanced Generics.
 never (nunca)- lança um erro sempre que ele é definido.
 never é raramente usado, seu uso primário é em Genéricos avançados.*/
 
-//let b: never = true;
+//let b: never = true; //Error TS- Type 'true' is not assignable to type 'never'.ts(2322)
+//let b: never = 10; //Error TS- Type '10' is not assignable to type 'never'.ts(2322)
+//let b: never = undefined; //Error TS- Type 'undefined' is not assignable to type 'never'.ts(2322)
+
 
 /* array - TypeScript has a specific syntax for arrays.
-array - TypeScript tem uma sintaxe específica para matrizes.*/
+array (matriz) - TypeScript tem uma sintaxe específica para matrizes.*/
 
 const names: string[] = [];
 names.push("Dimitri"); // no error
@@ -60,3 +63,6 @@ names.push("Dimitri"); // no error
 
 /* The 'readonly' keyword prevents arrays from being changed.
 A palavra-chave 'readonly' (somente leitura) impede que matrizes sejam alteradas.*/
+
+const names2: readonly string[] = ["Paulo", "Mikaeli"];
+//names2.push("Jason"); //Error TS- Property 'push' does not exist on type 'readonly string[]'.ts(2339)
