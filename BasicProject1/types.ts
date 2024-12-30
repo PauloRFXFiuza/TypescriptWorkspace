@@ -35,24 +35,24 @@ The symbol type is used to create unique identifiers that can be used as keys in
 Exemplo de symbol
 O tipo symbol é usado para criar identificadores únicos que podem ser utilizados como chaves em objetos. */
 
-// Explicit declaration
+// Explicit declaration- declaração explícita
 let uniqueKey: symbol = Symbol("description");
 
-// Using symbols as keys in objects
+// Using symbols as keys in objects- utilizando symbols como chaves em objetos
 let myObject = {
   [uniqueKey]: "value associated with the symbol"
 };
 
-console.log(myObject[uniqueKey]); // "value associated with the symbol"
+console.log(myObject[uniqueKey]); //result: "value associated with the symbol"
 
-// Each Symbol is unique
+// Each Symbol is unique- Cada symbol é único
 let anotherKey: symbol = Symbol("description");
-console.log(uniqueKey === anotherKey); // false
-
-
+let comparation: boolean = uniqueKey === anotherKey; // false result- resultado será falso
 
 /* When creating a variable, there are two main ways for TypeScript to assign a type:
 Ao criar uma variável, há duas maneiras principais de o TypeScript atribuir um tipo:
 - Explicit (Explícito) and Implicit (Implícito)
 /* EXPLICIT TYPE – When you assign the data type in the declaration. 
  TIPO EXPLÍCITO – Quando se atribui o tipo de dado na declaração.*/
+
+let otherName: string = "Mikaeli";
