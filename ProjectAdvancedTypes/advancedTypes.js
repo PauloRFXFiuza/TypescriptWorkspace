@@ -84,3 +84,10 @@ Por que as tuplas só têm tipos fortemente definidos para os valores
 iniciais.*/
 const myTuple = [1, true, 'nice', 2];
 //myTuple.push(3); //Error TS- Property 'push' does not exist on type 'readonly [number, boolean, string, number]'.ts(2339)
+/* objects - Objects are variables with many values inside
+objetos (objects) - Objetos são variáveis com muitos valores dentro */
+const car = {
+    brand: "Toyota",
+    model: "Corolla",
+    year: 2009
+};
