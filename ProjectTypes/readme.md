@@ -1,4 +1,4 @@
-Typescript- By Paulo Fiuza - 12/30/2024
+Project Types on Typescript- By Paulo Fiuza - 12/30/2024
 
 Introduction
 The provided TypeScript code illustrates the concept of basic, simple, and primitive data types. It demonstrates how TypeScript assigns types explicitly or implicitly and introduces less common types such as bigint and symbol. This report explains each section of the code in a detailed and accessible way.
