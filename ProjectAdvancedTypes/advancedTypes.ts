@@ -113,4 +113,13 @@ const car: { brand: string, model: string, year: number } = {
     model: "Corolla",
     year: 2009
   };
+
+/* TypeScript can infer property types based on their values 
+O TypeScript pode inferir os tipos de propriedades com base em seus valores */
+
+const car2 = {
+    brand: "Toyota",
+  };
   
+  car2.brand = "Ford"; // no error - it understood that 'brand' is a string.
+  //car2.brand = 2; // Error TS- Type 'number' is not assignable to type 'string'.ts(2322)
