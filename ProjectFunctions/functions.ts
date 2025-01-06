@@ -16,3 +16,21 @@ QUANDO A FUNÇÃO NÃO TEM RETORNO */
 function printHello(): void {
     console.log('Hello!');
 };
+
+/* Types in function parameters
+Tipos em parâmetros de função */
+function multiplication(a: number, b: number): number {
+    return a * b;
+}
+
+//multiplication(5, 10); //output 50
+
+/* Optional parameters - the `?` operator here indicates 
+that the parameter `c` is optional 
+
+Parâmetros opcionais- o operador `?` 
+aqui marca que o parâmetro `c` é opcional */
+
+function add(a: number, b: number, c?: number): number {
+    return a + b + (c || 0);
+}

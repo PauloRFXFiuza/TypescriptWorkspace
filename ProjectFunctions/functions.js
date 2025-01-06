@@ -15,3 +15,17 @@ function printHello() {
     console.log('Hello!');
 }
 ;
+/* Types in function parameters
+Tipos em parâmetros de função */
+function multiplication(a, b) {
+    return a * b;
+}
+//multiplication(5, 10); //output 50
+/* Optional parameters - the `?` operator here indicates
+that the parameter `c` is optional
+
+Parâmetros opcionais- o operador `?`
+aqui marca que o parâmetro `c` é opcional */
+function add(a, b, c) {
+    return a + b + (c || 0);
+}
