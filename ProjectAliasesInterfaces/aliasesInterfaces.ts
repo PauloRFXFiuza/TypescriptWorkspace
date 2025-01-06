@@ -27,8 +27,34 @@ type Vehicle = {
 
 const honda: BrandVehicle = "Honda", civic: ModelVehicle = "Civic", yearCivic: YearVehicle = 1999;
 
+//Example 2- Vehicle Toyota
+
 const corolla2002 : Vehicle = {
     brand: "Toyota",
     model: "Corolla",
     year: 2002
+};
+
+//Interface Example - Exemplo de Interface
+
+interface Rectangle {
+    height: number,
+    width: number,
+    unit: string
+};
+
+//Example 1 - Rectangle 1
+
+const rectangle1: Rectangle = {
+    height: 100,
+    width: 200,
+    unit: "pixels"
+};
+
+//Example 2 - Rectangle 2
+
+const rectangle2: Rectangle = {
+    height: 2.3,
+    width: 1.15,
+    unit: "centimeters"
 };

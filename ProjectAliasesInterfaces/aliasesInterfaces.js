@@ -13,8 +13,22 @@ As interfaces são a mesma coisa que os aliases, exceto que só se aplicam ao ti
 */
 //Example 1- Vehicle Honda
 const honda = "Honda", civic = "Civic", yearCivic = 1999;
+//Example 2- Vehicle Toyota
 const corolla2002 = {
     brand: "Toyota",
     model: "Corolla",
     year: 2002
+};
+;
+//Example 1 - Rectangle 1
+const rectangle1 = {
+    height: 100,
+    width: 200,
+    unit: "pixels"
+};
+//Example 2 - Rectangle 2
+const rectangle2 = {
+    height: 2.3,
+    width: 1.15,
+    unit: "centimeters"
 };
