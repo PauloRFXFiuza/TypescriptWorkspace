@@ -37,3 +37,12 @@ function add(a: number, b: number, c?: number): number {
 
 //add(5,3); //output 8
 //add(5,3,2); //output 10
+
+/* Parameters with default initial values
+Parâmetros com valores iniciais padrão */
+function greeting(name: string = "Paulo"): void {
+    console.log(`Hello, ${name}!`);
+}
+
+//greeting(); // Output: Hello, Paulo!
+//greeting("Mikaeli"); // Output: Hello, Mikaeli!
