@@ -37,5 +37,12 @@ Parâmetros com valores iniciais padrão */
 function greeting(name = "Paulo") {
     console.log(`Hello, ${name}!`);
 }
+;
 //greeting(); // Output: Hello, Paulo!
 //greeting("Mikaeli"); // Output: Hello, Mikaeli!
+// Named parameters - Parâmetros Nomeados
+function hello({ name, age }) {
+    console.log(`Hello, ${name}! You are ${age} years old.`);
+}
+// hello({ name: "Paulo", age: 34 });
+// Output: Hello, Paulo! You are 34 years old.
