@@ -29,3 +29,6 @@ aqui marca que o parâmetro `c` é opcional */
 function add(a, b, c) {
     return a + b + (c || 0);
 }
+;
+//add(5,3); //output 8
+//add(5,3,2); //output 10
