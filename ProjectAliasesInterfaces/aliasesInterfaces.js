@@ -24,11 +24,25 @@ const corolla2002 = {
 const rectangle1 = {
     height: 100,
     width: 200,
-    unit: "pixels"
+    unit: "pixel"
 };
 //Example 2 - Rectangle 2
 const rectangle2 = {
     height: 2.3,
     width: 1.15,
-    unit: "centimeters"
+    unit: "centimeter"
+};
+//Example 1 - Colored Rectangle 1
+const coloredRectangle1 = {
+    height: 50,
+    width: 45,
+    unit: "pixel",
+    color: "pink"
+};
+//Example 2 - Colored Rectangle 2
+const coloredRectangle2 = {
+    height: 0.015,
+    width: 0.007,
+    unit: "meter",
+    color: "light blue"
 };

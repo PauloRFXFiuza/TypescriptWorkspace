@@ -48,7 +48,7 @@ interface Rectangle {
 const rectangle1: Rectangle = {
     height: 100,
     width: 200,
-    unit: "pixels"
+    unit: "pixel"
 };
 
 //Example 2 - Rectangle 2
@@ -56,5 +56,31 @@ const rectangle1: Rectangle = {
 const rectangle2: Rectangle = {
     height: 2.3,
     width: 1.15,
-    unit: "centimeters"
+    unit: "centimeter"
+};
+
+/* EXTENDING INTERFACES - Inherit properties from the original and add something.
+
+ESTENDENDO INTERFACES - Herdar propriedades do original e adicionar algo.*/
+
+interface ColoredRectangle extends Rectangle {
+    color: string
+}
+
+//Example 1 - Colored Rectangle 1
+
+const coloredRectangle1: ColoredRectangle = {
+    height: 50,
+    width: 45,
+    unit: "pixel",
+    color: "pink"
+};
+
+//Example 2 - Colored Rectangle 2
+
+const coloredRectangle2: ColoredRectangle = {
+    height: 0.015,
+    width: 0.007,
+    unit: "meter",
+    color: "light blue"
 };
