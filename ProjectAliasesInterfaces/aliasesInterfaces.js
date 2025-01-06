@@ -11,4 +11,10 @@ Os aliases de tipo permitem definir tipos com um nome personalizado
 (um alias) de tipos primitivos ou complexos.
 As interfaces são a mesma coisa que os aliases, exceto que só se aplicam ao tipo objeto.
 */
-let a = 2;
+//Example 1- Vehicle Honda
+const honda = "Honda", civic = "Civic", yearCivic = 1999;
+const corolla2002 = {
+    brand: "Toyota",
+    model: "Corolla",
+    year: 2002
+};
