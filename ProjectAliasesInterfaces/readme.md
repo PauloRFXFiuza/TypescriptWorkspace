@@ -111,7 +111,7 @@ Conclusion
 
 TypeScript’s type aliases and interfaces provide powerful tools for creating clear and reusable data structures. Type aliases simplify complex type definitions, while interfaces ensure that objects follow a defined structure. Additionally, interfaces offer flexibility through inheritance, enabling scalable and maintainable code. By using these features effectively, developers can write code that is both robust and easy to understand, even for those new to programming.
 
-
+__________________________________________________________________________________________________________________________________________________
 
 Relatório Detalhado Sobre o Código TypeScript: Aliases e Interfaces
 
